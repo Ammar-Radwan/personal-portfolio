@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+@config "../tailwind.config.js";
+
+
+*, body {
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    @apply min-xl:w-[1366px] max-xl:px-[2%] w-[90%] mx-auto
+}
+
+.project-responsive {
+    @apply max-xl:relative max-xl:top-0
+}
+
+.font-clamp {
+    font-size: clamp(1rem, 4.5rem, 7rem) !important;
+}
+
+
+/* .projects-container-mobile {
+    @apply h-fit p-12 grid max-lg:grid-cols-2 max-sm:grid-cols-1 gap-6
+    
+} */
+.projects-container-mobile {
+    @apply h-fit p-12 grid grid-cols-1 gap-6
+    
+}
+.project-mobile {
+    @apply static md:h-[25rem] h-[15rem]
+}
