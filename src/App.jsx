@@ -1,12 +1,10 @@
 import React from 'react'
-import MainLayout from './layouts/MainLayout'
+import { RouterProvider } from 'react-router-dom'
+import MainRouter from './routers/MainRouter'
 
 function App() {
-
   return (
-    <div className="app w-screen h-screen">
-      <MainLayout />
-    </div>
+    <RouterProvider router={MainRouter} />
   )
 }
 
